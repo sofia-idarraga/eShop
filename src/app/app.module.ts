@@ -12,9 +12,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AppRoutingModule } from './app-routing.module';
+import { InfoComponent } from './component/info/info.component';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ProductsComponent],
+  declarations: [AppComponent, HeaderComponent, ProductsComponent, InfoComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -24,6 +27,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatButtonModule,
     FlexLayoutModule,
+    AppRoutingModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

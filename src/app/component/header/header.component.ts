@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  public totalItem : number = 10;
+  constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
+    this.cartService.getTotal()
+    .subscribe(value =>{
+      this.totalItem = value
+    })
+  
+  }
+  hidden = false;
+
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
   }
 
 }
