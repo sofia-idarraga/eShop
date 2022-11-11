@@ -14,12 +14,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { InfoComponent } from './component/info/info.component';
-import {MatBadgeModule} from '@angular/material/badge';
+import { MatBadgeModule } from '@angular/material/badge';
 import { ClipboardModule } from '@angular/cdk/clipboard';
-import { ProductComponent } from './product/product.component';
+import { ProductComponent } from './component/product/product.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ProductsComponent, InfoComponent, ProductComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    ProductsComponent,
+    InfoComponent,
+    ProductComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -31,7 +37,7 @@ import { ProductComponent } from './product/product.component';
     FlexLayoutModule,
     AppRoutingModule,
     MatBadgeModule,
-    ClipboardModule
+    ClipboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

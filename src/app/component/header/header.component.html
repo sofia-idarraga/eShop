@@ -2,8 +2,8 @@
   <mat-icon color="accent">loyalty</mat-icon>
   <span routerLink="/products" class="title">My eShop</span>
   <span class="example-spacer"></span>
-  <button mat-raised-button  routerLink="/info">About Us</button>
-  <button mat-icon-button color="accent" class="example-icon"   (click)="toggleBadgeVisibility()">
+  <button mat-raised-button routerLink="/info">About Us</button>
+  <button mat-icon-button color="accent" class="example-icon" (click)="toggleBadgeVisibility()">
     <mat-icon [matBadge]="totalItem" matBadgeColor="warn" [matBadgeHidden]="hidden">shopping_cart</mat-icon>
   </button>
 </mat-toolbar>
