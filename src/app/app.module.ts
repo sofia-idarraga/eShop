@@ -15,6 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { InfoComponent } from './component/info/info.component';
 import {MatBadgeModule} from '@angular/material/badge';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, ProductsComponent, InfoComponent],
@@ -28,7 +29,8 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatButtonModule,
     FlexLayoutModule,
     AppRoutingModule,
-    MatBadgeModule
+    MatBadgeModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

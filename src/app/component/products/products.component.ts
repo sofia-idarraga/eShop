@@ -16,6 +16,7 @@ export class ProductsComponent implements OnInit {
   }
 
   products: any[] = [];
+  copyClipText : string = "http://localhost:4200/"
 
   getProducts(): void{
     this.service.getProducts()

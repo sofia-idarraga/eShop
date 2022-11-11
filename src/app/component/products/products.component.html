@@ -21,7 +21,7 @@
         </mat-card-content>
         <mat-card-actions>
           <button mat-button (click)="addToCart()"><mat-icon>shopping_basket</mat-icon></button>
-          <button mat-button>SHARE</button>
+          <button mat-button [cdkCopyToClipboard]="copyClipText">SHARE</button>
         </mat-card-actions>
       </mat-card>
     </div>
