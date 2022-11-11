@@ -14,4 +14,8 @@ export class ApiService {
     return this.http.get<any>(this.baseUrl)
   }
 
+  getProduct(id: string| null){
+    return this.http.get<any>(this.baseUrl+ `?id=${id}`)
+  }
+
 }

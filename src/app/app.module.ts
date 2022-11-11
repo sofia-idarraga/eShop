@@ -16,9 +16,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { InfoComponent } from './component/info/info.component';
 import {MatBadgeModule} from '@angular/material/badge';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ProductsComponent, InfoComponent],
+  declarations: [AppComponent, HeaderComponent, ProductsComponent, InfoComponent, ProductComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

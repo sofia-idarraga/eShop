@@ -6,3 +6,7 @@
   display: table-cell;
   width: 490px;
 }
+
+.title{
+  cursor: pointer;
+}

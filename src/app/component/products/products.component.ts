@@ -16,7 +16,7 @@ export class ProductsComponent implements OnInit {
   }
 
   products: any[] = [];
-  copyClipText : string = "http://localhost:4200/"
+  copyToClipboard: string= '';
 
   getProducts(): void{
     this.service.getProducts()
@@ -25,6 +25,11 @@ export class ProductsComponent implements OnInit {
 
   addToCart(){
     this.cartService.addItem()
+  }
+
+  getLink(id: string): string {
+    this.copyToClipboard = `localhost:4200/product/${id}`
+    return this.copyToClipboard;
   }
 
 }
